@@ -17,7 +17,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="min-w-full">
+      <body className="min-w-full bg-black">
         <TRPCReactProvider>
           {children} <Toaster closeButton richColors position="top-center" />
         </TRPCReactProvider>
